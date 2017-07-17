@@ -1,0 +1,132 @@
+/**********************/
+/*******  BODY  *******/
+/**********************/
+
+/* Style the body */
+body {
+  background-color: black;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  text-align: center; /* Center text in the center */
+  margin: 0; /* Remove margins */
+  opacity: 0.9; /* Reduce opacity */
+}
+
+/* Define flex classes */
+.flex-container {
+  display: flex; /* Flex time! */
+  flex-wrap: wrap; /* Wrap — default is nowrap */
+  justify-content: center; /* Center content — default is flex-start */
+}
+.flex-inline {
+  display: inline-flex; /* Flex horizontally */
+}
+
+/************************/
+/*******  HEADER  *******/
+/************************/
+
+/* Wrapper */
+header {
+  background-color: black;
+  border-bottom: 1px solid seashell; /* Add a border to the bottom */
+  height: 69px;
+  position: fixed; /* Don't move a muscle */
+  width: 100%;
+  z-index: 1; /* Rise up! */
+}
+/* Logo */
+.logo {
+  align-self: center; /* Center logo */
+  height: 50px; /* Set height */
+  padding-left: 10px; /* Move a little to the right */
+}
+/* Navigation */
+nav {
+  flex-grow: 1; /* Auto stretch horizontally */
+  justify-content: flex-end; /* Keep to the right — default is flex-start */
+}
+nav a {
+  display: block;
+  color: seashell;
+  text-decoration: underline; /* Add underlines to hyperlinks */
+  padding: 20px; /* Add padding around each hyperlinks */
+}
+
+/******************************/
+/*******  MAIN CONTENT  *******/
+/******************************/
+
+/* Main content */
+.main-content {
+  width: 1200px; /* Set a width of 1200px */
+  margin: 0 auto; /* Keep it center */
+}
+#our-mission,
+#featured-tea,
+#locations {
+  padding-top: 70px; /* Push down from header so it's visible */
+}
+/* Our mission */
+#our-mission {
+  margin-bottom: 70px;
+}
+#our-mission .content {
+  background-color: #000000; /* Add background colour */
+  margin: auto; /* Center block*/
+  width: 100%; /* Make full width */
+}
+.bg-image-mission {
+  background-image: url(../images/img-mission-background.jpg); /* Add background image*/
+  background-position: center; /* Center image */
+  height: 700px;
+}
+/* Tea of the month */
+#featured-tea .content {
+  width: 1000px;
+  margin: auto;
+}
+.totm-images div {
+  padding: 0 15px; /* Room for divs */
+}
+.totm-images img {
+  width: 300px; /* Set width of images */
+}
+.totm-images h4 {
+  margin: 10px 30px 30px; /* Give breathing room top, right-left, bottom */
+}
+/* Locations */
+#locations {
+  background-image: url(../images/img-locations-background.jpg);
+  height: 500px;
+  margin: 40px auto 70px;
+  padding-top: 120px; /* Move down stores container */
+}
+#locations h2 {
+  width: 100%; /* Fill full width of container */
+  margin: 10px 0;
+}
+#locations .stores {
+  width: 1100px; /* Set width of stores container */
+  margin: auto; /* Center in the middle */
+}
+#locations .store {
+  background-color: #000000; /* Add black background colour */
+  width: 300px; /* Set width of each store */
+  margin: auto 20px;
+  opacity: 1;
+  padding: 20px 0;
+}
+/* Contact */
+#contact {
+  margin-bottom: 70px;
+}
+
+/************************/
+/*******  FOOTER  *******/
+/************************/
+footer h5 {
+  text-align: left; /* Align text left */
+  margin-left: 20px;
+}
